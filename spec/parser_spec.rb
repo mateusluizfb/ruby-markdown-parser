@@ -14,11 +14,11 @@ RSpec.describe Parser do
     end
   end
 
-  context 'parse italics' do
-    let(:markdown_text) { '_This is a simple text_' }
+  context 'parse bold' do
+    let(:markdown_text) { '__This is a simple text__' }
 
     it do
-      paragraph = '<p><em>This is a simple text</em></p>'
+      paragraph = '<p><strong>This is a simple text</strong></p>'
       is_expected.to eq(paragraph)
     end
   end
