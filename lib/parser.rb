@@ -7,7 +7,7 @@ module Parser
 
   def self.replace_tags(markdown_text)
     markdown_text
-      .then { |text| text.gsub(/_(.*?)\_/, '<em>\1</em>') }
       .then { |text| text.gsub(/__(.*?)\__/, '<strong>\1</strong>') }
+      .then { |text| text.gsub(/_(.*?)\_/, '<em>\1</em>') }
   end
 end
