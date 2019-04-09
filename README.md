@@ -33,3 +33,17 @@
       <li><strong>bold item</strong></li>
     </ul>
   ```
+
+### Bonus
+
+- If any HTML tag is in the input, the output will be the HTML itself
+  ```
+    <div> <span> Hello There </span> </div>
+  ```
+  Will be:
+    ```
+    <div> <span> Hello There </span> </div>
+  ```
+- Can read from a `.md` file and output the html string
+- Can create a `.html` file given a markdown string
+- Can read a `.md` and create a `.html` from it
