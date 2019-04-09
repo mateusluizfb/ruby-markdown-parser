@@ -106,7 +106,7 @@
     </ul>
     ```
 
-- If any HTML is given as an input, the output will be the HTML itself
+- If any HTML is given as an input, the output will be the HTML itself. Example:
   ```
     <div> <span> Hello There </span> </div>
   ```
