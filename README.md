@@ -115,5 +115,5 @@
     <div> <span> Hello There </span> </div>
   ```
 - Can read from a `.md` file and output the html string
-- Can create a `.html` file given a markdown string
+- Given a markdown string as an input, can create a `.html` file from it
 - Can read a `.md` and create a `.html` from it
