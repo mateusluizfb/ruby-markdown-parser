@@ -54,7 +54,7 @@
 
 ### Bonus
 
-- Every text that have a break line will be a paragraph`
+- Every text that have a break line will be a paragraph. Example:
     ```
         Hello There
         
