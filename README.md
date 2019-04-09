@@ -2,30 +2,32 @@
 
 ### Goals
 
-- Every text in the __same line__ that aren't inside a list or header will be a `<p></p>`
+- Every text that aren't inside a list or header will be a `<p></p>`
     ```
         Hello There
-        
-        General Kenobi!
     ```
     
     Will be:
     ```
         <p>Hello There</p>
-        
-        <p>General Kenobi</p>
     ```
     
     
 - _Italics_ to `<em></em>`
 - __Bold text__ to `<strong></strong>`
 - Headers with N #'s will be `<h'N'></h'N'>`
-- Lists like:
+- Unordered lists like:
     ```
       * Item 1
       * Item 2
     ```
-  Will be: `<ul><li>Item 1</li><li>Item 2</li></ul>`
+    Will be:
+    ```
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    ```
 
 - All the elements above can be mixed to gerenate a html. Example:
   ```
@@ -49,6 +51,34 @@
   ```
 
 ### Bonus
+
+- Every text that have a break line will be a paragraph`
+    ```
+        Hello There
+        
+        General Kenobi!
+    ```
+    
+    Will be:
+    ```
+        <p>Hello There</p>
+        
+        <p>General Kenobi</p>
+    ```
+
+
+- Ordered lists like
+     ```
+      1. Item 1
+      2. Item 2
+    ```
+    Will be:
+    ```
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+    ```
 
 - If any HTML tag is in the input, the output will be the HTML itself
   ```
