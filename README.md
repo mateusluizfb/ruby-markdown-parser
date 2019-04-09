@@ -50,6 +50,8 @@
     </ul>
   ```
 
+-------
+
 ### Bonus
 
 - Every text that have a break line will be a paragraph`
@@ -80,7 +82,31 @@
     </ol>
     ```
 
-- If any HTML tag is in the input, the output will be the HTML itself
+- Lists inside lists like:  
+    ```
+    - First item
+    - Second item
+    - Third item
+        - Indented item
+        - Indented item
+    - Fourth item
+    ```
+    Will be:
+    ```
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item
+        <ul>
+            <li>Indented item</li>
+            <li>Indented item</li>
+        </ul>
+        </li>
+        <li>Fourth item</li>
+    </ul>
+    ```
+
+- If any HTML is given as an input, the output will be the HTML itself
   ```
     <div> <span> Hello There </span> </div>
   ```
