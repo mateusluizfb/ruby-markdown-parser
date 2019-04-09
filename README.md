@@ -2,7 +2,21 @@
 
 ### Goals
 
-- Every text that aren't inside a list or header will be a `<p></p>`
+- Every text in the __same line__ that aren't inside a list or header will be a `<p></p>`
+    ```
+        Hello There
+        
+        General Kenobi!
+    ```
+    
+    Will be:
+    ```
+        <p>Hello There</p>
+        
+        <p>General Kenobi</p>
+    ```
+    
+    
 - _Italics_ to `<em></em>`
 - __Bold text__ to `<strong></strong>`
 - Headers with N #'s will be `<h'N'></h'N'>`
