@@ -34,4 +34,16 @@ RSpec.describe Parser do
       is_expected.to eq(expected_text)
     end
   end
+
+  context 'parse mixed text' do
+    let(:markdown_text) do
+      'This text has __bold__ and _italics_ text'
+    end
+
+    it do
+      expected_text = ''\
+        '<p>This text has <strong>bold</strong> and <em>italics</em> text</p>'
+      is_expected.to eq(expected_text)
+    end
+  end
 end
