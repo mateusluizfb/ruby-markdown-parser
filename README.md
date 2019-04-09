@@ -1,6 +1,6 @@
 ## Ruby Markdown Parser
 
-### Goals
+### Goals (Source https://www.markdownguide.org/basic-syntax/)
 
 - Every text that aren't inside a list or header will be a `<p></p>`
     ```
@@ -13,8 +13,8 @@
     ```
     
     
-- _Italics_ to `<em></em>`
-- __Bold text__ to `<strong></strong>`
+- `_Italics_` to `<em></em>`
+- `__Bold text__` to `<strong></strong>`
 - Headers with N #'s will be `<h'N'></h'N'>`
 - Unordered lists like:
     ```
