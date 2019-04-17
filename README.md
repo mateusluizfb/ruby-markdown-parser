@@ -1,6 +1,6 @@
 ## Ruby Markdown Parser
 
-### Goals
+### Goals (Source https://www.markdownguide.org/basic-syntax/)
 
 - Every text that aren't inside a list or header will be a `<p></p>`
     ```
@@ -13,8 +13,8 @@
     ```
     
     
-- _Italics_ to `<em></em>`
-- __Bold text__ to `<strong></strong>`
+- `_Italics_` to `<em></em>`
+- `__Bold text__` to `<strong></strong>`
 - Headers with N #'s will be `<h'N'></h'N'>`
 - Unordered lists like:
     ```
@@ -54,7 +54,7 @@
 
 ### Bonus
 
-- Every text that have a break line will be a paragraph`
+- Every text that have a break line will be a paragraph. Example:
     ```
         Hello There
         
@@ -106,7 +106,7 @@
     </ul>
     ```
 
-- If any HTML is given as an input, the output will be the HTML itself
+- If any HTML is given as an input, the output will be the HTML itself. Example:
   ```
     <div> <span> Hello There </span> </div>
   ```
@@ -115,5 +115,5 @@
     <div> <span> Hello There </span> </div>
   ```
 - Can read from a `.md` file and output the html string
-- Can create a `.html` file given a markdown string
+- Given a markdown string as an input, can create a `.html` file from it
 - Can read a `.md` and create a `.html` from it
