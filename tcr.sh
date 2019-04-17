@@ -5,6 +5,6 @@ NC='\033[0m' # No Color
 
 TEST="bundle exec rspec"
 COMMIT="git add . && git commit -am 'TCR STEP'"
-REVERT='git reset --hard HEAD~1 && echo -e "${RED} [TCR] REVERTED"'
+REVERT='git reset --hard HEAD && echo -e "${RED} [TCR] REVERTED"'
 
 (eval $TEST) && (eval $COMMIT) || (eval $REVERT)
