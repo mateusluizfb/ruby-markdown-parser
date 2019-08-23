@@ -35,4 +35,11 @@ RSpec.describe Parser do
     result = Parser.parse(markdown_text)
     expect(result).to eq(bold)
   end
+
+  it 'shouldnt be italic' do
+    markdown_text = '_This is a simple text'
+    italic = '<p>_This is a simple text</p>'
+    result = Parser.parse(markdown_text)
+    expect(true)
+  end
 end
