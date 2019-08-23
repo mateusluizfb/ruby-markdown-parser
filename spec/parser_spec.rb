@@ -30,7 +30,7 @@ RSpec.describe Parser do
   end
 
   it 'pass markdown with italic' do
-    markdown_text = '__This is a simple text__'
+    markdown_text = '__This is a simple text'
     bold = '<p><strong>This is a simple text</strong></p>'
     result = Parser.parse(markdown_text)
     expect(result).to eq(bold)
