@@ -38,8 +38,8 @@ RSpec.describe Parser do
 
   it 'shouldnt be italic' do
     markdown_text = '_This is a simple text'
-    italic = '<p>_This is a simple text</p>'
+    fake = '<p>_This is a simple text</p>'
     result = Parser.parse(markdown_text)
-    expect(true)
+    expect(result).to eq(fake)
   end
 end
