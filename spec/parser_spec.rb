@@ -22,4 +22,10 @@ RSpec.describe Parser do
     expect(result).to eq(italic)
   end
 
+  it 'pass with bold' do
+    text = 'This is a simple text'
+    bold = '<strong>This is a simple text</strong>'
+    result = Parser.bold(text)
+    expect(result).to eq(bold)
+  end
 end

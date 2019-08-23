@@ -4,12 +4,14 @@ class Parser
       markdown_text = italic(markdown_text.gsub '_', '')
     end
     paragraph(markdown_text)
-
   end
   def self.paragraph(markdown_text)
     "<p>#{markdown_text}</p>"
   end
   def self.italic(markdown_text)
     "<em>#{markdown_text}</em>"
+  end
+  def self.bold(markdown_text)
+    "<strong>#{markdown_text}</strong>"
   end
 end
