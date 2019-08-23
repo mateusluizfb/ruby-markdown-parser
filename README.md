@@ -2,7 +2,7 @@
 
 ### Goals (Source https://www.markdownguide.org/basic-syntax/)
 
-- Every text that aren't inside a list or header will be a `<p></p>`
+- Every text that isn't inside a list or header will be a `<p></p>`
     ```
         Hello There
     ```
