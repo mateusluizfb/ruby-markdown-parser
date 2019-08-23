@@ -14,4 +14,11 @@ RSpec.describe Parser do
     result = Parser.italic(text)
     expect(result).to eq(italic)
   end
+
+  it 'pass markdown with italic' do
+    markdown_text = '_This is a simple text_'
+    italic = '<em>This is a simple text</em>'
+    result = Parser.parse(markdown_text)
+    expect(result).to eq(italic)
+  end
 end
