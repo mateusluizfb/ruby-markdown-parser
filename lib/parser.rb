@@ -1,7 +1,7 @@
 class Parser
   def self.parse(markdown_text)
     if markdown_text.include? "_"
-      italic(markdown_text.gsub! '_', '')
+      italic(markdown_text.gsub '_', '')
     else
       paragraph(markdown_text)
     end
